@@ -72,7 +72,7 @@ when I think of SSL offloading, first thing that comes to mind is Performance me
 
 #  How I do :
 
-#  Lets take, I had already configured Prometheus servers already in place or configured newly
+Lets take, I had already configured Prometheus servers already in place or configured newly
 
 #  First Monitor: Local Resources based(Node-exporter) - CPU,MEM,DISK etc
 
