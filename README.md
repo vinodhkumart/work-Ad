@@ -1,44 +1,62 @@
-# work-Ad
-For Linux:
+# Scenario 1:
+Please write a simple CLI application in the language of your choice that does the following:
+
+- Print the numbers from 1 to 10 in random order to the terminal.
+- Please provide a README that explains in detail how to run the program on
+MacOS and Linux.
+
+##Solution:
+----------------------------------------------------------------------------------------
 I wrote the script to generate random numbers in both bash and python.
-Prerequisites:
 
-core-utils package to be installed for shuf (Note: Sort command can be used as well without shuf)
-python package to execute python scripts
-Steps to execute the shell scripts :
+##Prerequisites:
 
- git clone https://github.com/vinodhkumart/work-Ad.git
- cd  work-Ad
- chmod +x random.sh
- ./random.sh 
-output:
+- core-utils package to be installed  for shuf (Note: Sort command can be used as well without shuf)
+- python package to execute python scripts
 
-[ec2-user@myworks work-Ad]$ ./random.sh
-1 4 10 9 7 3 6 8 2 5 
-Steps to execute the python script :
+##### For Linux #####
+---------------------
+## Steps to execute the shell scripts##
 
- git clone https://github.com/vinodhkumart/work-Ad.git
- cd  work-Ad
- python ran.py
-output:
+     git clone https://github.com/vinodhkumart/work-Ad.git
+     cd  work-Ad
+     chmod +x random.sh
+     ./random.sh
 
-[ec2-user@myworks work-Ad]$ python ran.py
-[4, 1, 2, 3, 5, 0, 8, 7, 9, 6]
-For MACOS:
-git clone https://github.com/vinodhkumart/work-Ad.git
-cd  work-Ad
-chmod +x mac.sh
-./mac.sh
-output:
+##output##
 
-bash-3.2$work-Ad]$ ./mac.sh
-2
-5
-6
-3
-1
-10
-9
-4
-8
-7
+    [ec2-user@myworks work-Ad]$ ./random.sh
+    1 4 10 9 7 3 6 8 2 5
+
+## Steps to execute the python script
+
+     git clone https://github.com/vinodhkumart/work-Ad.git
+     cd  work-Ad
+     python ran.py
+
+##output##
+
+    [ec2-user@myworks work-Ad]$ python ran.py
+    [4, 1, 2, 3, 5, 0, 8, 7, 9, 6]
+
+##### For MACOS ##### (Note: This can be used for Linux as well)
+---------------------
+
+    git clone https://github.com/vinodhkumart/work-Ad.git
+    cd  work-Ad
+    chmod +x mac.sh
+    ./mac.sh
+
+##output##
+
+    bash-3.2$work-Ad]$ ./mac.sh
+    2
+    5
+    6
+    3
+    1
+    10
+    9
+    4
+    8
+    7
