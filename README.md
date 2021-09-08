@@ -63,18 +63,18 @@ I wrote the script to generate random numbers in both bash and python.
 
 # Scenario 2 Solution:
 ----------------------------------------------------------------------------------------------------------
-I prefer using the promethues, Grafana and Alert Manger as a open source monitoring soltuon for this specific scenario. Along with Prometheus/Grafana, I would like to use ELK stack with APM integrated for the purpose of distributed tracing.
+I prefer using the promethues, Grafana and Alert Manger as a open source monitoring solution for this specific scenario. Along with Prometheus/Grafana, I would like to use ELK stack with APM integrated for the purpose of distributed tracing.
 
 Enterprise version: Datadog will be one of the good option.
 
 when I think of SSL offloading, first thing that comes to mind is Performance metrics. I would like to use TSDB based monitoring tool i.e promethues to collect the performance metrics. This is one of the best white box monitoring that wil be used to scrape the metrics.
 
 
-#How I do :
+#  How I do :
 
 #  Lets take, I had already configured Prometheus servers already in place or configured newly
 
-##First Monitor: Local Resources based(Node-exporter) - CPU,MEM,DISK etc
+#  First Monitor: Local Resources based(Node-exporter) - CPU,MEM,DISK etc
 
 
 - First, configure the server as Target on prometheus server ( edit the prometheus.yaml file with required details)
@@ -111,9 +111,9 @@ node_memory_MemFree_bytes
 node_memory_Mapped_bytes
 
 
-##Second Monitor: Proxy server based Metrics based on different tools like haproxy,nginx,F5 etc as They do have different exporters available 
+# Second Monitor: Proxy server based Metrics based on different tools like haproxy,nginx,F5 etc as They do have different exporters available 
 
-#HTTP: (Source: https://prometheus.io/docs/instrumenting/exporters/)
+# HTTP: (Source: https://prometheus.io/docs/instrumenting/exporters/)
 HAProxy exporter (official)
 Nginx metric library
 Nginx VTS exporter
@@ -153,7 +153,7 @@ Once the metrics added, Add best suited grafana metrics to monitor the services.
 - http_connect_time_average_seconds
 - http_queue_time_average_seconds
 
-##Thid Monitor: ssl_exporter - ssl related
+# Thid Monitor: ssl_exporter - ssl related
 
 Depoy the ssl exporter in the server which can scrape the metrics related to SSL . Process will be same as above for installation and deployment.
 
@@ -168,7 +168,7 @@ Depoy the ssl exporter in the server which can scrape the metrics related to SSL
 
 Wireshark to analyze tcpdump
 
-##CHALLENGES of monitoring
+#  CHALLENGES of monitoring
 
 - Identify which types of Ciphers used and which version of TLS being used
 - Collect metrics like connected via TLS1.1 but tried to send data using TLS1.2 cryptography will triggeer some confusion kind of attacks
